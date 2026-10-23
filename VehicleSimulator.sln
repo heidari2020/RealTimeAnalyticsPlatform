@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleSimulator", "src\Veh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleConsumer", "src\VehicleConsumer\VehicleConsumer.csproj", "{B84C3960-3830-B9D9-63F2-D4A411BBD083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleLocationApi", "src\VehicleLocationApi\VehicleLocationApi.csproj", "{C28A82A5-F096-4520-A003-B8260F039FBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{B84C3960-3830-B9D9-63F2-D4A411BBD083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B84C3960-3830-B9D9-63F2-D4A411BBD083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B84C3960-3830-B9D9-63F2-D4A411BBD083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28A82A5-F096-4520-A003-B8260F039FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28A82A5-F096-4520-A003-B8260F039FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28A82A5-F096-4520-A003-B8260F039FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28A82A5-F096-4520-A003-B8260F039FBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D48BD812-C646-4745-95E2-3BE3C609DFBE} = {719A373D-F5C3-4498-AB35-AFCFFB97D60B}
 		{B84C3960-3830-B9D9-63F2-D4A411BBD083} = {719A373D-F5C3-4498-AB35-AFCFFB97D60B}
+		{C28A82A5-F096-4520-A003-B8260F039FBE} = {719A373D-F5C3-4498-AB35-AFCFFB97D60B}
 	EndGlobalSection
 EndGlobal
