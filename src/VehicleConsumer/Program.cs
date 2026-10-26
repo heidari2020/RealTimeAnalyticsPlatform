@@ -14,6 +14,9 @@ builder.Configuration
 builder.Services.Configure<KafkaOptions>(
     builder.Configuration.GetSection(KafkaOptions.SectionName));
 
+builder.Services.Configure<RedisOptions>(
+    builder.Configuration.GetSection(RedisOptions.SectionName));
+
 builder.Services.AddHostedService<VehicleConsumerWorker>();
 
 var host = builder.Build();
