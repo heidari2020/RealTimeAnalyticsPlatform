@@ -17,6 +17,9 @@ builder.Services.Configure<KafkaOptions>(
 builder.Services.Configure<RedisOptions>(
     builder.Configuration.GetSection(RedisOptions.SectionName));
 
+builder.Services.Configure<MongoDbOptions>(
+    builder.Configuration.GetSection(MongoDbOptions.SectionName));
+
 builder.Services.AddHostedService<VehicleConsumerWorker>();
 
 var host = builder.Build();
