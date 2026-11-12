@@ -59,9 +59,44 @@ services:
     networks:
       - analytics-network
 
+  vehicle-simulator:
+    build:
+      context: ./src/VehicleSimulator
+      dockerfile: Dockerfile
+    container_name: vehicle-simulator
+    depends_on:
+      - kafka
+    networks:
+      - analytics-network
+
+  vehicle-consumer:
+    build:
+      context: ./src/VehicleConsumer
+      dockerfile: Dockerfile
+    container_name: vehicle-consumer
+    depends_on:
+      - kafka
+      - redis
+      - mongodb
+    networks:
+      - analytics-network
+
+  vehicle-api:
+    build:
+      context: ./src/VehicleLocationApi
+      dockerfile: Dockerfile
+    container_name: vehicle-api
+    ports:
+      - "5000:8080"
+    depends_on:
+      - redis
+      - mongodb
+    networks:
+      - analytics-network
+
 volumes:
   kafka-data:   
-  mongodb-data:  
+  mongodb-data:
 
 networks:
   analytics-network:

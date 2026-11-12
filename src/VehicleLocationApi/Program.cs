@@ -3,7 +3,7 @@ using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var redis = ConnectionMultiplexer.Connect("localhost:6379");
+var redis = ConnectionMultiplexer.Connect("redis:6379");
 builder.Services.AddSingleton<IConnectionMultiplexer>(redis);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
