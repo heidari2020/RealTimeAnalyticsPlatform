@@ -17,7 +17,7 @@ graph TD
     F[VehicleLocationApi<br/>Minimal API] -->|Read Location| D
     F -->|Read Alerts| E
     G((Client / Swagger)) -->|HTTP GET| F
-    ```
+ ```
 
 ## 🚀 Features
 
@@ -48,4 +48,4 @@ graph TD
 ### 1. Start Kafka and Kafdrop
 
 ```bash
-docker-compose up -d# RealTimeAnalyticsPlatform
+docker-compose up -d --build
