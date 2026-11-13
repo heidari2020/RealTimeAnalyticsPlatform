@@ -17,6 +17,7 @@ graph TD
     F[VehicleLocationApi<br/>Minimal API] -->|Read Location| D
     F -->|Read Alerts| E
     G((Client / Swagger)) -->|HTTP GET| F
+    ```
 
 ## 🚀 Features
 
