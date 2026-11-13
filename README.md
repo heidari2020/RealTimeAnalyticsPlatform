@@ -1,6 +1,6 @@
 # Real-Time Analytics Platform
 
-![.NET CI](https://github.com/heidari2020/RealTimeAnalyticsPlatform/actions/workflows/dotnet-ci.yml/badge.svg) *(جایگزین لینک بج خودت کن)*[![.NET CI Pipeline](https://github.com/heidari2020/RealTimeAnalyticsPlatform/actions/workflows/dotnet-ci.yml/badge.svg)](https://github.com/heidari2020/RealTimeAnalyticsPlatform/actions/workflows/dotnet-ci.yml)
+[![.NET CI Pipeline](https://github.com/heidari2020/RealTimeAnalyticsPlatform/actions/workflows/dotnet-ci.yml/badge.svg)](https://github.com/heidari2020/RealTimeAnalyticsPlatform/actions/workflows/dotnet-ci.yml)
 
 A distributed, event-driven platform built with **.NET 8** that simulates vehicle GPS data, processes it in real-time via **Apache Kafka**, caches the latest locations in **Redis**, flags speed violations in **MongoDB**, and exposes the data through a **Minimal API**.
 
